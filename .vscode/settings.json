@@ -1,0 +1,14 @@
+{
+    "cmake.buildDirectory": "${workspaceRoot}/../build",
+    "catch2TestExplorer.logfile": "catch2TestExplorer.log",
+    "catch2TestExplorer.executables": [
+        {
+            "name": "${filename} (${relDirpath}/)",
+            "pattern": "../build/**/Tests.exe",
+            "cwd": "${absDirpath}",
+            "env": {
+                "C2TESTEXECUTABLEPATH": "${absPath}"
+            }
+        }
+    ],
+}
